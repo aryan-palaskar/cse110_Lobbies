@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { connectDB } from '../db';
+import { connectDB } from './db';
 
 export const createLobby = async (req: Request, res: Response) => {
   const { lobbyName, scavengerItems, userId, pin } = req.body;

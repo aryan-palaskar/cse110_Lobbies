@@ -10,7 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.joinLobby = exports.createLobby = void 0;
-const db_1 = require("../db");
+const db_1 = require("./db");
 const createLobby = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     const { lobbyName, scavengerItems, userId, pin } = req.body;
     if (!pin || !/^\d{4}$/.test(pin)) {
